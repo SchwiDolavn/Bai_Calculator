@@ -5,16 +5,52 @@
 </head>
 <body>
     <h1>Calculator</h1>
-    <input id="So_thu_1" type="number"/>;
-    <input id="So_thu_2" type="number"/>;
+    <input id="So_thu_1" type="number"/>
+    <input id="So_thu_2" type="number"/>
     <br/>
-    <button>Phep Cong (+)</button>
-    <button>Phep Cong (+)</button>
-    <button>Phep Cong (+)</button>
-    <button>Phep Cong (+)</button>
-    <p id="result">Result Devision: 1</p>
+    <button onclick="Addition()">Phep Cong (+)</button>
+    <button onclick="Subtraction()">Phep Tru (-)</button>
+    <button onclick="Multiplication()">Phep Nhan (*)</button>
+    <button onclick="Devision()">Phep Chia (/)</button>
+    <p id="result">Result: none</p>
     <script>
+        //  let number_1 = document.getElementById("So_thu_1").value;
+        //  let number_2 = document.getElementById("So_thu_2").value;
+        //      let p=   document.getElementById("result");
+        //      function Addition() {
+        //          let A= +number_1.value;
+        //          let B= +number_2.value;
+        //          let ket_qua = A + B;
+        //           p.innerHTML= "Result Addition: " + ket_qua;
 
+        //      } 
+        function Addition() {
+     let number_1 = +document.getElementById("So_thu_1").value;
+     let number_2 = +document.getElementById("So_thu_2").value;
+
+     let ket_qua = number_1 + number_2;
+     document.getElementById("result").innerHTML= "Result Addition: " + ket_qua;
+    }
+    function Subtraction() {
+     let number_1 = +document.getElementById("So_thu_1").value;
+     let number_2 = +document.getElementById("So_thu_2").value;
+
+     let ket_qua = number_1 - number_2;
+    }
+    function Multiplication() {
+     let number_1 = +document.getElementById("So_thu_1").value;
+     let number_2 = +document.getElementById("So_thu_2").value;
+
+     let ket_qua = number_1 * number_2;
+     document.getElementById("result").innerHTML= "Result Multiplication: " + ket_qua;
+    }
+    function Devision() {
+     let number_1 = +document.getElementById("So_thu_1").value;
+     let number_2 = +document.getElementById("So_thu_2").value;
+
+     let ket_qua = number_1 / number_2;
+     document.getElementById("result").innerHTML= "Result Devision: " + ket_qua;
+    }
     </script>
 
 </body>
